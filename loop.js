@@ -6,3 +6,13 @@ for (let i = 1; i <= 50; i++) {
         console.log(i);
     }
     }
+
+
+// Sum all odd numbers between 1 and 100
+let oddSum = 0;
+for(let i = 1; i <=100; i++) {
+    if (i % 2 !== 0) {
+        oddsum+= i;
+    }
+}
+  
