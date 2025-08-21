@@ -31,3 +31,16 @@ r,function refinerycapacity(crude) {
         console.log(`Total delivered: ${total} litres`);
     }
 }
+ //Defective Parts
+ filterDefects ([2, 8, 1, 0, 6, 7, 3, 9, 5]);
+
+ function filterDefects(defects) {
+    let result = [];
+    for (let i = 0; i < defects.length; i++) {
+        if (defects[i] > 5) {
+            result.push(defects[i]);
+        }
+    }
+    console.log(result);
+ }
+ 
