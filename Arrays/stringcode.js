@@ -98,3 +98,18 @@ r,function refinerycapacity(crude) {
     }
     console.log(`Lowest yield: ${min} bags on day ${index}`);
  }
+
+ //7 Health
+
+ hypertensionReadings ([[120,80], [150,95], [138,85], [145,95], [160,100]]);
+
+ function hypertensionReadings (readings) {
+    let flagged = [];
+
+    for (let i = 0; i < readings.length; i++) {
+        if (readings[i][0] > 140) {
+            flagged.push(readings[i]);
+        }
+    }
+    console.log(flagged);
+ }
