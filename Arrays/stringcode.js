@@ -43,4 +43,20 @@ r,function refinerycapacity(crude) {
     }
     console.log(result);
  }
- 
+
+ //4 Pharmacy
+
+ detectZeroConsumption ([[5,0,0,4,6,5,4], [3,1,0,2,0,1,2], [0,0,0,0,0,0,0]]);
+
+ function detectZeroConsumption (data) {
+    let flagged [];
+
+    for (let i = 0; i < data.length; i++) {
+        let medcine = data[i];
+        for (let j = 0; j < medcine.length - 1; j++) {
+            flagged.push(medcine);
+            break;
+        }
+    }
+ }
+ crossOriginIsolated.log(flagged);
