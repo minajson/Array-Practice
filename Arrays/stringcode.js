@@ -83,3 +83,18 @@ r,function refinerycapacity(crude) {
     console.log(result);
 
  }
+
+ //6 Agriculture
+
+ lowestYield([45, 60, 38, 55, 70, 42, 39, 48]);
+ function lowestYield(yields) {
+    let min = yields[0];
+    let index = 0;
+
+    for (let i = 1; i < yields.length; i++) {
+        if (yields[i] < min) {
+            min = yields[i];
+        }
+    }
+    console.log(`Lowest yield: ${min} bags on day ${index}`);
+ }
