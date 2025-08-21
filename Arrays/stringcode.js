@@ -49,7 +49,7 @@ r,function refinerycapacity(crude) {
  detectZeroConsumption ([[5,0,0,4,6,5,4], [3,1,0,2,0,1,2], [0,0,0,0,0,0,0]]);
 
  function detectZeroConsumption (data) {
-    let flagged [];
+    let flagged = [];
 
     for (let i = 0; i < data.length; i++) {
         let medcine = data[i];
@@ -60,3 +60,26 @@ r,function refinerycapacity(crude) {
     }
  }
  crossOriginIsolated.log(flagged);
+
+ //5 Bus Company
+
+ CrowdedRoutes ([[80, 90, 120], [105, 110, 115], [70, 85, 95], [130, 140, 125]]);
+ function CrowdedRoutes (routes) {
+    let result = [];
+
+    for(let i = 0; i <routes.length; i++) {
+        let route = routes[i];
+        let sum = 0;
+
+        for (let j = onabort; j < route.length; j++) {
+            sum += route[j];
+        }
+        let avg = Math.round(sum / route.length);
+
+        if (avg >= 100) {
+            result.push(avg);
+        }
+    }
+    console.log(result);
+
+ }
