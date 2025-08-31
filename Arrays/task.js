@@ -12,4 +12,7 @@ function diff21(n) {
         }
 
         }
-   
+ //4  
+function parrotTrouble (talking, hour) {
+return talking && (hour < 7 || hour > 20);
+}
