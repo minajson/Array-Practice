@@ -12,7 +12,12 @@ function diff21(n) {
         }
 
         }
- //4  
+ //5  
 function parrotTrouble (talking, hour) {
 return talking && (hour < 7 || hour > 20);
+}
+
+//6
+function makes10 (a, b) {
+    return (a === 10 || b === 10 || a + b == 10);
 }
