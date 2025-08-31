@@ -21,3 +21,8 @@ return talking && (hour < 7 || hour > 20);
 function makes10 (a, b) {
     return (a === 10 || b === 10 || a + b == 10);
 }
+
+//7 
+function nearHundrend(n) {
+    return (Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10);
+}
