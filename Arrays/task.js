@@ -59,4 +59,7 @@ let middle = str.substring(1, str.length - 1);
 return lastchar + middle + firstchar;
 }
 
-
+function front3(str) {
+    let front = str.length < 3 ? str : str.substring(0, 3);
+    return front + front + front;
+}
