@@ -34,3 +34,29 @@ function posNeg (a, b, negative) {
     return ((a < 0 && b > 0 || a > 0 && b < 0));
     }
 }
+
+function notString(str){
+    if (str.startsWith("not")) {
+        return str;
+
+     } else {
+         return "not " + str;
+    }
+}
+
+function missingChar(str, n) {
+    return str.substribg(0, n) + str.substring(n + 1);
+}
+
+function frontBack(str) {
+    if (str.length <= 1){
+        return str;    
+}
+let firstchar = str[0];
+let lastchar = str[str.length - 1];
+let middle = str.substring(1, str.length - 1);
+
+return lastchar + middle + firstchar;
+}
+
+
