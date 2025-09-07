@@ -26,3 +26,11 @@ function makes10 (a, b) {
 function nearHundrend(n) {
     return (Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10);
 }
+
+function posNeg (a, b, negative) {
+    if (negative) {
+        return (a < 0 && b < 0);
+    }else {
+    return ((a < 0 && b > 0 || a > 0 && b < 0));
+    }
+}
